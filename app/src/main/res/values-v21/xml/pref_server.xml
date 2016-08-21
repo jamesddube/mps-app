@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:title="Server Url"
+                        android:key="server_url"
+                        android:textColor="@color/colorAccent"
+                        android:summary="Please provide the server address"/>
+    <CheckBoxPreference android:title="Notifications"
+                        android:defaultValue="true"
+                        android:summary="Get notifications of orders, stock etc"
+                        android:key="" />
+    <ListPreference     android:title="Sync Interval"
+                        android:summary="Select how often to sync data to the server"
+                        android:key="sync_interval"
+                        android:textColor="@color/colorAccent"
+                        android:defaultValue="1"
+                        android:entries="@array/listArray"
+                        android:entryValues="@array/listValues" />
+    <Preference
+        android:title="Sync Now"
+        >
+
+    </Preference>
+</PreferenceScreen>

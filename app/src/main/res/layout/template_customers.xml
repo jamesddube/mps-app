@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="2dp"
+    >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/customer_logo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_company_light"
+                />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/customer_name"
+                android:textSize="15sp"
+                android:text="Coke 330ml"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/customer_logo"
+                android:layout_toEndOf="@+id/customer_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/customer_type"
+                android:text="10"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+
+</RelativeLayout>

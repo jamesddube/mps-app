@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="80dp"
+    android:padding="2dp"
+    >
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/customer_logo"
+        android:src="@drawable/ic_can"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/tv_stock_code"
+        android:text="1030"
+        android:textColor="@color/accent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_stock_description"
+        android:layout_toRightOf="@+id/customer_logo"
+        android:layout_toEndOf="@+id/customer_logo" />
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_stock_description"
+        android:textSize="15sp"
+        android:text="Coke 330ml"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/customer_logo"
+        android:layout_toEndOf="@+id/customer_logo" />
+    <TextView
+        android:layout_toRightOf="@+id/customer_logo"
+        android:layout_toEndOf="@+id/customer_logo"
+        android:layout_marginTop="2dp"
+        android:text="12 X 300ML RGB"
+        android:textColor="@color/bg_"
+        android:layout_below="@+id/tv_stock_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_quantity"
+        android:text="Available"
+        android:textColor="#8805e705"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="6dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/tv_stock_quantity"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="6dp"
+        android:textColor="@color/bg_"
+        android:text="50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

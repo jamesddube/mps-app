@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_sync"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.intersect.app.mps.ActivitySync">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/fragment_sync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/btn_sync"
+        android:src="@drawable/ic_refresh"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_height="wrap_content" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>

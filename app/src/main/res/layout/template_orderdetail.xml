@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="80dp"
+    android:padding="2dp"
+    >
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/customer_logo"
+        android:src="@drawable/ic_can"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/product_code"
+        android:text="1030"
+        android:textColor="@color/accent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/product_desc"
+        android:layout_toRightOf="@+id/customer_logo"
+        android:layout_toEndOf="@+id/customer_logo" />
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_desc"
+        android:textSize="15sp"
+        android:text="Coke 330ml"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/customer_logo"
+        android:layout_toEndOf="@+id/customer_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_quantity"
+        android:text="10"
+        android:layout_marginRight="15dp"
+        android:textSize="20sp"
+        android:textColor="@color/bg_"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+</RelativeLayout>
